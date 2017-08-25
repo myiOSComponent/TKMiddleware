@@ -10,6 +10,8 @@
 #endif
 #endif
 
+#import "TKMiddleWare.h"
+#import "TKClassMethodInfo.h"
 
 FOUNDATION_EXPORT double TKMiddlewareVersionNumber;
 FOUNDATION_EXPORT const unsigned char TKMiddlewareVersionString[];

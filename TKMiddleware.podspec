@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TKMiddleware'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of TKMiddleware.'
+  s.version          = '0.0.1db'
+  s.summary          = '组件开发的中间件'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,20 +18,25 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+iOS组件开发的中间件，所有组件都必须依赖的一个组件，它是所有组件的核心组件，以Target-Action模式
+创建。
                        DESC
 
   s.homepage         = 'https://github.com/512869343@qq.com/TKMiddleware'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { '512869343@qq.com' => '512869343@qq.com' }
-  s.source           = { :git => 'https://github.com/512869343@qq.com/TKMiddleware.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/myiOSComponent/TKMiddleware.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'TKMiddleware/Classes/**/*'
-  
+    s.public_header_files = 'TKMiddleware/Classes/TKMiddleWare.h'
+    s.source_files = 'TKMiddleware/Classes/TKMiddleWare.m'
+    s.subspec 'Extend' do |es|
+        es.source_files = 'TKMiddleware/Classes/Extend/**'
+    end
+
   # s.resource_bundles = {
   #   'TKMiddleware' => ['TKMiddleware/Assets/*.png']
   # }
