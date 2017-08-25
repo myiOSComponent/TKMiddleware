@@ -3,7 +3,7 @@
   "version": "0.0.1db",
   "summary": "组件开发的中间件",
   "description": "iOS组件开发的中间件，所有组件都必须依赖的一个组件，它是所有组件的核心组件，以Target-Action模式\n创建。",
-  "homepage": "https://github.com/512869343@qq.com/TKMiddleware",
+  "homepage": "https://github.com/thinkWind",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -18,12 +18,11 @@
   "platforms": {
     "ios": "8.0"
   },
-  "public_header_files": "TKMiddleware/Classes/TKMiddleWare.h",
-  "source_files": "TKMiddleware/Classes/TKMiddleWare.m",
+  "source_files": "TKMiddleware/Classes/TKMiddleWare.{h,m}",
   "subspecs": [
     {
       "name": "Extend",
-      "source_files": "TKMiddleware/Classes/Extend/**"
+      "source_files": "TKMiddleware/Classes/Extend/TKClassMethodInfo.{h,m}"
     }
   ]
 }

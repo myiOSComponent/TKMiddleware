@@ -22,7 +22,7 @@ iOS组件开发的中间件，所有组件都必须依赖的一个组件，它�
 创建。
                        DESC
 
-  s.homepage         = 'https://github.com/512869343@qq.com/TKMiddleware'
+  s.homepage         = 'https://github.com/thinkWind'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { '512869343@qq.com' => '512869343@qq.com' }
@@ -31,11 +31,7 @@ iOS组件开发的中间件，所有组件都必须依赖的一个组件，它�
 
   s.ios.deployment_target = '8.0'
 
-    s.public_header_files = 'TKMiddleware/Classes/TKMiddleWare.h'
-    s.source_files = 'TKMiddleware/Classes/TKMiddleWare.m'
-    s.subspec 'Extend' do |es|
-        es.source_files = 'TKMiddleware/Classes/Extend/**'
-    end
+  s.source_files = 'TKMiddleware/Classes/**/*'
 
   # s.resource_bundles = {
   #   'TKMiddleware' => ['TKMiddleware/Assets/*.png']
