@@ -1,0 +1,12 @@
+use_frameworks!
+
+target 'TKMiddleware_Example' do
+  pod 'TKMiddleware', :path => '../'
+
+  target 'TKMiddleware_Tests' do
+    inherit! :search_paths
+
+    pod 'Kiwi'
+  pod 'FBSnapshotTestCase'
+  end
+end
