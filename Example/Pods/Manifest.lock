@@ -1,0 +1,26 @@
+PODS:
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+  - Kiwi (2.4.0)
+  - TKMiddleware (0.1.0)
+
+DEPENDENCIES:
+  - FBSnapshotTestCase
+  - Kiwi
+  - TKMiddleware (from `../`)
+
+EXTERNAL SOURCES:
+  TKMiddleware:
+    :path: ../
+
+SPEC CHECKSUMS:
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  Kiwi: f49c9d54b28917df5928fe44968a39ed198cb8a8
+  TKMiddleware: 27f23a4b10b6886efd99511e78031ce87728e53e
+
+PODFILE CHECKSUM: 4b7ff279e5bea4b5fec96527a203bde2e5ae5f40
+
+COCOAPODS: 1.3.1

@@ -1,0 +1,6 @@
+framework module Pods_TKMiddleware_Tests {
+  umbrella header "Pods-TKMiddleware_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
