@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TKMiddleware'
-  s.version          = '0.0.1db'
+  s.version          = '0.0.1'
   s.summary          = '组件开发的中间件'
 
 # This description is used to generate tags and improve search results.
